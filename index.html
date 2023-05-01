@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <title>Proile Dashboard - Clamp</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="callout" id="callout">
+        <p>Clamp is deployed on the Polygon mainnet but still undergoing testing. There is a risk of losing your funds
+            and cryptocurrency. To go back to Clamp's main page <a href="">click here.</a> </p>
+
+        <p onclick="closeButton()" class="closebtn">x</p>
+    </div>
+
+    <nav>
+        <p class="logo">clamp</p>
+        <button class="connect-wallet-btn">
+            Connect Wallet
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="explore-container">
+            <div class="explore-btn">
+                <a href="#">Explore</a>
+            </div>
+            <div class="card-container">
+                <p class="head-text">Buy any crypto index anytime, anywhere.</p>
+                <div class="cards">
+                    <div class="card">
+                        <p class="line" style="background-color: red;"></p>
+                        <h3>WBTC-WETH</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/WBTC.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WETH.svg" alt="">
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-3.1%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: blue;"></p>
+                        <h3>USDC-WETH</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/USDC.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WETH.svg" alt="">
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-1.2%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: green;"></p>
+                        <h3>USDC-WBTC</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/USDC.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WBTC.svg" alt="">
+
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-1.8%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: orange;"></p>
+                        <h3>WETH-WMATIC</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/WETH.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WMATIC.svg" alt="">
+                                
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-2.6%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: red;">
+                        </p>
+                        <h3>USDC-WMATIC</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/USDC.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WMATIC.svg" alt="">
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-1.3%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: blue;"></p>
+                        <h3>WBTC-WETH-USDC</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+
+                                    <img src="https://test.joinclamp.com/tokens/WBTC.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WETH.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/USDC.svg" alt="">
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-2.0%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: green;"></p>
+                        <h3>WBTC-WETH-WMATIC</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/WBTC.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WETH.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WMATIC.svg" alt="">
+                                
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-3.0%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: orange;"></p>
+                        <h3>DAI-USDC-WBTC</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/DAI.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/USDC.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WBTC.svg" alt="">
+                                    
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-1.2%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                    <div class="card">
+                        <p class="line" style="background-color: red;"></p>
+                        <h3>DAI-WETH-WMATIC</h3>
+
+                        <div class="card-data">
+                            <div class="card-data-left">
+
+                                <p class="tokens-card">
+                                    Underlying Tokens <br>
+                                    <img src="https://test.joinclamp.com/tokens/DAI.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WETH.svg" alt="">
+                                    <img src="https://test.joinclamp.com/tokens/WBTC.svg" alt="">
+
+                                </p>
+
+                            </div>
+                            <div class="card-data-right">
+                                <p>Price Change <br>(in 24hrs)</p>
+                                <p class="arrow-percentage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-red-500">
+                                        <line x1="7" y1="7" x2="17" y2="17"></line>
+                                        <polyline points="17 7 17 17 7 17"></polyline>
+                                    </svg>
+                                    <span>-2.0%</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <button class="buybtn">Buy</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="scrollbtn" title="Scroll to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+
+    <script>
+        function closeButton() {
+            const callout = document.querySelector("#callout")
+            callout.style.display = "none"
+        }
+        let mybutton = document.getElementById("scrollbtn");
+        window.onscroll = function () {
+            scrollFunction()
+
+        };
+
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+
+</html>

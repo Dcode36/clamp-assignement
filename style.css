@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.callout {
+    background-color: #FF7A30;
+    text-align: center;
+    position: relative;
+    padding: 10px 30px;
+
+}
+
+.callout p,
+.callout p a {
+    color: white;
+    font-size: 1rem;
+}
+
+.closebtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1rem !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 100px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+nav .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav button {
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+nav button:hover{
+    background-color: #FF7A30;
+    
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-container {
+    height: 90%;
+    width: 90%;
+    padding: 2%;
+}
+
+.explore-btn {
+    margin: 10px 0;
+}
+
+.explore-btn a {
+    padding: 10px 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    border: 1px solid rgba(0, 0, 0, 0.186);
+    border-radius: 10px;
+}
+
+.cards {
+    margin: 20px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+
+.card {
+    height: 200px;
+    width: 30%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    overflow: hidden;
+    border-radius: 7px;
+    position: relative;
+}
+.card .line{
+    height: 4px;
+    width: 100%;
+    background-color: red;
+}
+.card h3{
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+.head-text{
+    margin: 20px ;
+    color: gray;
+    padding: 20px 0;
+}
+.card-data{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tokens-card{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.702);
+}
+.tokens-card img{
+    height: 25px;
+    margin: 5px 0;
+    
+}
+.card-data-right p{
+    text-align: end;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.702);
+}
+.card-data-right 
+.arrow-percentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-percentage svg{
+    color: red;
+}
+
+.arrow-percentage span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.buybtn{
+    padding: 11px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+}
+.buybtn:hover{
+    background-color: #FF7A30;
+}
+
+#scrollbtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color:#FF7A30 ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+  }
+  #scrollbtn i{
+    font-weight: bold;
+  }
+  #scrollbtn:hover {
+    background-color: #555;
+  }
+  @media(max-width: 1023px){
+    .card {
+        width: 45%;
+    }
+  }
+  @media(max-width: 768px){
+    .card {
+        width: 90%;
+    }
+  }
